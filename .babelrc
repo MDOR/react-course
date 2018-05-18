@@ -1,0 +1,28 @@
+{
+    "presets": [
+        ["env", {
+            "targets": {
+                "browsers": ["last 2 versions"]
+            },
+            "modules": false,
+            "debug": true
+        }],
+        "react"
+    ],
+    "plugins": [
+        "transform-class-properties",
+        "transform-object-rest-spread"
+    ],
+    "env": {
+        "server": {
+            "presets": [
+                ["env", {
+                    "modules": "commonjs"
+                }]
+            ]
+        },
+        "production": {
+            "presets": ["minify"]
+        }
+    }
+}
