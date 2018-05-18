@@ -1,0 +1,33 @@
+{
+  "plugins": ["prettier"],
+  "extends": [
+    "airbnb",
+    "react",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "func-names": ["error", "never"],
+    "no-alert": ["error"],
+    "prettier/prettier": "error"
+  },
+  "globals": {
+    "window": true,
+    "document": true
+  },
+  "eslintIgnore": [
+    "./node_modules",
+    ".editorconfig"
+  ]
+}
